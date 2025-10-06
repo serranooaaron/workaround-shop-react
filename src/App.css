@@ -1,0 +1,27 @@
+/* * Paleta de colores */
+/* color: #780000 Barn Red - Vino */
+/* color: #C1121F Fire brick - red */
+/* color: #FDF0D5 Papaya whip - crema */
+/* color: #FFFFFF blanco */
+/* color: #003049 Prussian blue */
+/* color: #669BBC Air superiority blue */
+/* https://coolors.co/780000-c1121f-fdf0d5-003049-669bbc */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100dvw;
+  height: 100dvh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100dvw;
+  height: 100dvh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
