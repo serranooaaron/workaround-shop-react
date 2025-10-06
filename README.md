@@ -1,18 +1,80 @@
-# React + Vite
+# WorkAround Shop React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una tienda online desarrollada con **React** y **Vite**. Incluye una barra de navegación, un widget de carrito interactivo y un contenedor de productos, todo con estilos personalizados y diseño responsive.
 
-Currently, two official plugins are available:
+## Estructura del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+MyReactApp/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── main.jsx
+│   ├── assets/
+│   │   ├── cart-icon.png
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── CartWidget.jsx
+│   │   ├── ItemListContainer.jsx
+│   │   └── NavBar.jsx
+│   └── styles/
+│       ├── CartWidget.css
+│       ├── itemListContainer.css
+│       └── navbar.css
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
-## React Compiler
+## Componentes Principales
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **NavBar.jsx**: Barra de navegación principal con enlaces y el carrito.
+- **CartWidget.jsx**: Widget de carrito con contador y botones para sumar/restar productos.
+- **ItemListContainer.jsx**: Contenedor para mostrar mensajes o productos.
 
-Note: This will impact Vite dev & build performances.
+## Estilos
 
-## Expanding the ESLint configuration
+Los estilos están organizados en la carpeta `src/styles/` y utilizan Flexbox y media queries para asegurar un diseño responsive.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Personalización y Responsividad
+
+- El header y la navbar usan Flexbox y `flex-wrap` para adaptarse a diferentes tamaños de pantalla.
+- Se utilizan media queries para mejorar la experiencia en dispositivos móviles.
+- Los íconos y assets están en `src/assets/` y se importan como módulos en los componentes.
+
+## Scripts Disponibles
+
+- `npm run dev`: Inicia el servidor de desarrollo con Vite.
+- `npm run build`: Genera la build de producción.
+- `npm run preview`: Previsualiza la build de producción.
+- `npm run lint`: Ejecuta ESLint para analizar el código.
+
+## Dependencias
+
+- **React** 19+
+- **Vite** 7+
+- **ESLint** para control de calidad del código
+
+## Cómo iniciar el proyecto
+
+1. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+2. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+3. Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+## Notas
+
+- El proyecto está pensado para ser una base de e-commerce, fácilmente ampliable.
+- Los estilos y componentes pueden personalizarse según tus necesidades.
+
+## DEPLOY: https://workaround-shop-react.vercel.app/
+
+Desarrollado por [serranooaaron](https://github.com/serranooaaron)
